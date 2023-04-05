@@ -26,7 +26,10 @@ import {
   SiSwagger,
   SiSemanticuireact,
   SiMaterialui,
-  SiStyledcomponents
+  SiStyledcomponents,
+  SiCircle,
+  SiSignal,
+  SiBootstrap
 } from 'react-icons/si';
 
 import css from './Techs.module.scss';
@@ -41,11 +44,13 @@ const techList = [
   { name: 'REST API', icon: <SiSwagger /> },
   { name: 'Ionic', icon: <SiIonic /> },
   { name: 'Semantic UI', icon: <SiSemanticuireact /> },
-  { name: 'Reactstrap', icon: <SiMaterialui /> },
+  { name: 'Bootstrap', icon: <SiBootstrap /> },
   { name: 'Styled-Components', icon: <SiStyledcomponents /> },
   { name: 'Docker', icon: <SiDocker /> },
+  { name: 'CI/CD', icon: <SiCircle /> },
   { name: 'Git', icon: <SiGit /> },
   { name: 'ESLint', icon: <SiEslint /> },
+  { name: 'SignalR', icon: <SiSignal /> },
   { name: 'Prettier', icon: <SiPrettier /> },
 ];
 

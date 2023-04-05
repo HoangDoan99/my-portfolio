@@ -13,7 +13,7 @@ const experienceList = (refs: ExperienceRefs) => [
     company: 'Bakco',
     companyURL: 'https://www.bakco.com.vn/',
     ref: refs.$bakco,
-    period: 'April 2021 — December 2022',
+    period: 'April 2021 — March 2023',
     // prettier-ignore
     details: (
       <>
