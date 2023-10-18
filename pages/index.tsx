@@ -1,17 +1,17 @@
-import React, { useRef } from 'react';
-import Head from 'next/head';
-import type { NextPage } from 'next';
+import React, { useRef } from "react";
+import Head from "next/head";
+import type { NextPage } from "next";
 
-import Cursor from '../components/common/Cursor';
-import InformationSection from '../components/portfolio/InformationSection';
-import NameAndTitle from '../components/portfolio/NameAndTitle';
-import Techs from '../components/portfolio/Techs';
-import Interests from '../components/portfolio/Interests';
-import Experiences from '../components/portfolio/Experiences';
+import Cursor from "../components/common/Cursor";
+import InformationSection from "../components/portfolio/InformationSection";
+import NameAndTitle from "../components/portfolio/NameAndTitle";
+import Techs from "../components/portfolio/Techs";
+import Interests from "../components/portfolio/Interests";
+import Experiences from "../components/portfolio/Experiences";
 
-import css from './index.module.scss';
+import css from "./index.module.scss";
 
-const aboutMe = `A self-learning and open-minded Front End Developer with over 2 years of experience in analytics, designing, developing and maintaining Web Pages and cross-platform for Mobile Apps. Adept in JavaScript/TypeScript with a specialization in React JS. Seeking to leverage a diverse background and technical expertise to excel as a Front End Developer.`;
+const aboutMe = `An adaptable and open-minded Front End Developer with a strong passion for learning, possessing 3 years of experience in system analysis, design, development, and maintenance of Web applications and cross-platform apps. Proficient in JavaScript/TypeScript, specializing in React. Striving to leverage a diverse background and technical proficiency to thrive as a Front End Developer.`;
 
 const Home: NextPage = () => {
   const $mail = useRef<HTMLAnchorElement>(null);
@@ -22,16 +22,14 @@ const Home: NextPage = () => {
   const $titkul = useRef<HTMLAnchorElement>(null);
 
   return (
-    <div className={css['scroll-wrapper']}>
-      <div className={css['wrapper']}>
+    <div className={css["scroll-wrapper"]}>
+      <div className={css["wrapper"]}>
         <Head>
           <title>{`<hoangdoan99 />`}</title>
         </Head>
-        <Cursor
-          $hoverables={[$mail, $github, $linkedin, $bakco, $titkul]}
-        />
+        <Cursor $hoverables={[$mail, $github, $linkedin, $bakco, $titkul]} />
         {NameAndTitle({ $mail, $github, $linkedin })}
-        <div className={css['information-wrapper']}>
+        <div className={css["information-wrapper"]}>
           <div>
             <InformationSection header="About" content={aboutMe} />
             <InformationSection header="Tech" content={Techs} />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   SiEslint,
   SiGit,
@@ -29,35 +29,41 @@ import {
   SiStyledcomponents,
   SiCircle,
   SiSignal,
-  SiBootstrap
-} from 'react-icons/si';
+  SiBootstrap,
+  SiMix,
+  SiNextdotjs,
+  SiFigma,
+} from "react-icons/si";
 
-import css from './Techs.module.scss';
+import css from "./Techs.module.scss";
 
 const techList = [
-  { name: 'HTML', icon: <SiHtml5 /> },
-  { name: 'CSS/SASS', icon: <SiSass /> },
-  { name: 'JavaScript', icon: <SiJavascript /> },
-  { name: 'TypeScript', icon: <SiTypescript /> },
-  { name: 'React', icon: <SiReact /> },
-  { name: 'Redux', icon: <SiRedux /> },
-  { name: 'REST API', icon: <SiSwagger /> },
-  { name: 'Ionic', icon: <SiIonic /> },
-  { name: 'Semantic UI', icon: <SiSemanticuireact /> },
-  { name: 'Bootstrap', icon: <SiBootstrap /> },
-  { name: 'Styled-Components', icon: <SiStyledcomponents /> },
-  { name: 'Docker', icon: <SiDocker /> },
-  { name: 'CI/CD', icon: <SiCircle /> },
-  { name: 'Git', icon: <SiGit /> },
-  { name: 'ESLint', icon: <SiEslint /> },
-  { name: 'SignalR', icon: <SiSignal /> },
-  { name: 'Prettier', icon: <SiPrettier /> },
+  { name: "React", icon: <SiReact /> },
+  { name: "JavaScript", icon: <SiJavascript /> },
+  { name: "TypeScript", icon: <SiTypescript /> },
+  { name: "HTML", icon: <SiHtml5 /> },
+  { name: "CSS/SCSS", icon: <SiSass /> },
+  { name: "Git", icon: <SiGit /> },
+  { name: "Redux", icon: <SiRedux /> },
+  { name: "Next", icon: <SiNextdotjs /> },
+  { name: "REST API", icon: <SiSwagger /> },
+  { name: "Ionic", icon: <SiIonic /> },
+  { name: "SignalR", icon: <SiSignal /> },
+  { name: "Bootstrap", icon: <SiBootstrap /> },
+  { name: "Semantic UI", icon: <SiSemanticuireact /> },
+  { name: "MUI", icon: <SiMix /> },
+  { name: "Design", icon: <SiFigma /> },
+  { name: "Styled-Components", icon: <SiStyledcomponents /> },
+  { name: "Docker", icon: <SiDocker /> },
+  { name: "CI/CD", icon: <SiCircle /> },
+  { name: "ESLint", icon: <SiEslint /> },
+  { name: "Prettier", icon: <SiPrettier /> },
 ];
 
 const Techs = (
   <>
     {techList.map((tech) => (
-      <div key={tech.name} className={css['tag']}>
+      <div key={tech.name} className={css["tag"]}>
         <div>
           <span className="gold-text">{tech.icon}</span>
           <span>{tech.name}</span>
